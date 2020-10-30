@@ -49,4 +49,4 @@ fi
 source=$PWD
 mount_arg="type=volume,source="$source",dst="$dest",type=bind"
 
-docker run --mount $mount_arg $docker_image
+docker run --rm --mount $mount_arg $docker_image
